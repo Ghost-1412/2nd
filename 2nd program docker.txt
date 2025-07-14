@@ -4,17 +4,52 @@ Here we will
 -- deploy a simple python flask app
 
 
+**install docker 
+**then you need Linux environment(in cmd) : wsl --install
+
 
 1) --to pull os image
 
-docker pull ubuntu 
-docker run -it ubuntu 
+	docker pull ubuntu 
+	docker run -it ubuntu 
 
 --to show all containers : docker ps 
 --to stop a running container : docker stop <container_id> 
 --to remove container : docker rm <container_id> 
-
 --to show images : docker images
 --to remove images : docker rmi <image_name> 
 
-2)
+
+
+
+2) -- create and deploy an image
+.. create a root directory(root folder)
+	+ app.py
+	+ requirements.txt
+	+ Dockerfile (without any extentions)
+
+.. navigate to the root folder, open cmd prompt and create an image with any name(let say flaskapp)
+	docker build -t flaskapp . 
+
+.. run the image on port 5000
+	docker run -d -p 5000:5000 flaskapp
+.. open the localhost:5000 to see the image running
+
+**Note - you can also stop and start an image/container from docker desktop
+
+
+
+
+
+3) -- to delete an image : 
+--to show all containers : docker ps 
+--to stop a running container : docker stop <container_id> 
+--to remove container : docker rm <container_id> 
+--to show images : docker images
+--to remove images : docker rmi <image_name> 
+
+
+
+
+4) to create a tag image and pushing it to your dockerHub account repository
+
