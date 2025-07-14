@@ -1,0 +1,20 @@
+Here we will  
+-- Install Docker 
+-- Pull Os images from DockerHub
+-- deploy a simple python flask app
+
+
+
+1) --to pull os image
+
+docker pull ubuntu 
+docker run -it ubuntu 
+
+--to show all containers : docker ps 
+--to stop a running container : docker stop <container_id> 
+--to remove container : docker rm <container_id> 
+
+--to show images : docker images
+--to remove images : docker rmi <image_name> 
+
+2)
