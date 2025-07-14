@@ -52,4 +52,13 @@ Here we will
 
 
 4) to create a tag image and pushing it to your dockerHub account repository
+-- docker login  (make sure you have docker desktop logged in and running in background)
+-- docker tag <image> <usrname>/<tagname> : docker tag flaskapp vivekpradhan22/ex_app
+-- docker push <usrname>/<tagname> :  docker push vivekpradhan22/ex_app
+
+
+
+
+
+
 
